@@ -1,0 +1,230 @@
+/* =========================
+   UNIFIED THEME SYSTEM
+   Single source of truth for all colors and styles
+========================= */
+
+:root {
+    /* Primary Colors - MODERN LIGHT THEME */
+    --primary-bg: #fafbff;
+    --secondary-bg: #f0f4ff;
+    --card-bg: #ffffff;
+    --surface-bg: #ffffff;
+    
+    /* Text Colors */
+    --text-primary: #1a1d29;
+    --text-secondary: rgba(26, 29, 41, 0.75);
+    --text-muted: rgba(26, 29, 41, 0.55);
+    --text-inverse: #ffffff;
+    
+    /* Font Settings */
+    --font-family: 'Poppins', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Accent Colors - Modern Purple/Indigo Gradient */
+    --accent-primary: #6366f1;
+    --accent-secondary: #8b5cf6;
+    --accent-hover: #4f46e5;
+    --accent-active: #4338ca;
+    --accent-light: rgba(99, 102, 241, 0.12);
+    --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #9333ea 100%);
+    
+    /* Button Colors */
+    --button-primary-bg: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --button-primary-text: #ffffff;
+    --button-primary-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    --button-secondary-bg: rgba(99, 102, 241, 0.1);
+    --button-secondary-text: #6366f1;
+    --button-secondary-hover: rgba(99, 102, 241, 0.2);
+    
+    /* Border Colors */
+    --border-primary: rgba(99, 102, 241, 0.2);
+    --border-secondary: rgba(99, 102, 241, 0.1);
+    --border-accent: #6366f1;
+    
+    /* Status Colors */
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --info: #3b82f6;
+    
+    /* Sidebar Colors */
+    --sidebar-bg: rgba(255, 255, 255, 0.95);
+    --sidebar-border: rgba(99, 102, 241, 0.15);
+    --sidebar-text: #1a1d29;
+    --sidebar-text-secondary: rgba(26, 29, 41, 0.65);
+    --sidebar-hover: rgba(99, 102, 241, 0.08);
+    --sidebar-active: rgba(99, 102, 241, 0.15);
+    
+    /* Animation & Effects */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 2px 8px rgba(99, 102, 241, 0.08);
+    --shadow-md: 0 4px 16px rgba(99, 102, 241, 0.12);
+    --shadow-lg: 0 8px 32px rgba(99, 102, 241, 0.16);
+    --shadow-xl: 0 20px 64px rgba(99, 102, 241, 0.2);
+    --shadow-colored: 0 8px 32px rgba(99, 102, 241, 0.3);
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    /* ========================
+       MODERN DARK PALETTE - Purple/Indigo Theme
+       Elegant dark theme with purple accents
+    ======================== */
+    /* Layer / Background Colors */
+    --primary-bg: #0f0f1e;        /* Deep purple-black background */
+    --secondary-bg: #1a1a2e;      /* Secondary sections */
+    --card-bg: #1e1e3f;           /* Cards / elevated surfaces */
+    --surface-bg: #252547;        /* Inputs / neutral surfaces */
+    --overlay-bg: rgba(15, 15, 30, 0.92); /* Backdrops / modals */
+
+    /* Text Colors */
+    --text-primary: #e2e8f0;      /* High-emphasis text */
+    --text-secondary: #94a3b8;    /* Secondary text */
+    --text-muted: #64748b;        /* Tertiary / placeholders */
+    --text-inverse: #ffffff;      /* On accent backgrounds */
+
+    /* Accent Colors - Purple/Indigo */
+    --accent-primary: #818cf8;    /* Main interactive color */
+    --accent-secondary: #a78bfa;
+    --accent-hover: #6366f1;      /* Hover state */
+    --accent-active: #4f46e5;     /* Active / pressed */
+    --accent-light: rgba(129, 140, 248, 0.15); /* Subtle accent background */
+    --accent-gradient: linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #c084fc 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+
+    /* Focus Outline */
+    --focus-ring: 0 0 0 3px rgba(129, 140, 248, 0.4);
+
+    /* Button Colors */
+    --button-primary-bg: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+    --button-primary-text: #ffffff;
+    --button-primary-hover: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --button-secondary-bg: rgba(129, 140, 248, 0.15);
+    --button-secondary-text: #a78bfa;
+    --button-secondary-hover: rgba(129, 140, 248, 0.25);
+
+    /* Border Colors */
+    --border-primary: rgba(129, 140, 248, 0.25);
+    --border-secondary: rgba(129, 140, 248, 0.15);
+    --border-accent: #818cf8;
+
+    /* Status Colors (tuned for dark) */
+    --success: #34d399;
+    --warning: #fbbf24;
+    --error: #f87171;
+    --info: #60a5fa;
+
+    /* Sidebar Colors */
+    --sidebar-bg: rgba(30, 30, 63, 0.95);
+    --sidebar-border: rgba(129, 140, 248, 0.2);
+    --sidebar-text: #e2e8f0;
+    --sidebar-text-secondary: #94a3b8;
+    --sidebar-hover: rgba(129, 140, 248, 0.1);
+    --sidebar-active: rgba(129, 140, 248, 0.25);
+
+    /* Elevation / Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.7);
+    --shadow-xl: 0 20px 64px rgba(0, 0, 0, 0.8);
+    --shadow-colored: 0 8px 32px rgba(129, 140, 248, 0.4);
+}
+
+/* Light Theme (explicit for backward compatibility) */
+[data-theme="light"] {
+    /* Primary Colors */
+    --primary-bg: #fafbff;
+    --secondary-bg: #f0f4ff;
+    --card-bg: #ffffff;
+    --surface-bg: #ffffff;
+    
+    /* Text Colors */
+    --text-primary: #1a1d29;
+    --text-secondary: rgba(26, 29, 41, 0.75);
+    --text-muted: rgba(26, 29, 41, 0.55);
+    --text-inverse: #ffffff;
+    
+    /* Accent Colors */
+    --accent-primary: #6366f1;
+    --accent-secondary: #8b5cf6;
+    --accent-hover: #4f46e5;
+    --accent-active: #4338ca;
+    --accent-light: rgba(99, 102, 241, 0.12);
+    --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #9333ea 100%);
+    
+    /* Button Colors */
+    --button-primary-bg: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --button-primary-text: #ffffff;
+    --button-primary-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    --button-secondary-bg: rgba(99, 102, 241, 0.1);
+    --button-secondary-text: #6366f1;
+    --button-secondary-hover: rgba(99, 102, 241, 0.2);
+    
+    /* Border Colors */
+    --border-primary: rgba(99, 102, 241, 0.2);
+    --border-secondary: rgba(99, 102, 241, 0.1);
+    --border-accent: #6366f1;
+    
+    /* Sidebar Colors */
+    --sidebar-bg: rgba(255, 255, 255, 0.95);
+    --sidebar-border: rgba(99, 102, 241, 0.15);
+    --sidebar-text: #1a1d29;
+    --sidebar-text-secondary: rgba(26, 29, 41, 0.65);
+    --sidebar-hover: rgba(99, 102, 241, 0.08);
+    --sidebar-active: rgba(99, 102, 241, 0.15);
+    
+    /* Shadows for light theme */
+    --shadow-sm: 0 2px 8px rgba(99, 102, 241, 0.08);
+    --shadow-md: 0 4px 16px rgba(99, 102, 241, 0.12);
+    --shadow-lg: 0 8px 32px rgba(99, 102, 241, 0.16);
+    --shadow-xl: 0 20px 64px rgba(99, 102, 241, 0.2);
+    --shadow-colored: 0 8px 32px rgba(99, 102, 241, 0.3);
+}
+
+/* =========================
+   LEGACY VARIABLE MAPPING
+   Map old variables to new unified system
+========================= */
+:root {
+    /* Old variables mapped to new system */
+    --bg-color: var(--primary-bg);
+    --container-bg: var(--secondary-bg);
+    --text-color: var(--text-primary);
+    --button-bg: var(--button-primary-bg);
+    --button-text: var(--button-primary-text);
+    --button-hover: var(--button-primary-hover);
+    --disabled-bg: var(--text-muted);
+    --array-bar-color: var(--accent-primary);
+    
+    /* Contribute.css compatibility */
+    --card-border: var(--border-primary);
+    --hover-bg: var(--button-secondary-bg);
+    --primary-color: var(--accent-primary);
+    --subtext-color: var(--text-secondary);
+    --btn-text: var(--button-primary-text);
+    
+    /* Components.css compatibility */
+    --bg-gradient: var(--primary-bg);
+    --header-bg: var(--secondary-bg);
+    --navbar-bg: var(--secondary-bg);
+    --mega-bg: var(--card-bg);
+}

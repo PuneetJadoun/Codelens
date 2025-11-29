@@ -1,0 +1,201 @@
+/* =========================
+   Import Unified Theme
+========================= */
+@import './theme.css';
+
+/* =========================
+   Light/Dark Mode Variables - Using New Theme
+========================= */
+:root {
+    --bg-color: var(--primary-bg);
+    --text-color: var(--text-primary);
+    --subtext-color: var(--text-secondary);
+}
+
+/* =========================
+   Base Styles
+========================= */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.about {
+    background-color: var(--bg-color); /* dynamic background */
+    color: var(--text-color);          /* main text color */
+    min-height: 100vh;                 /* make it cover full screen */
+    padding: 2rem;
+}
+.about-title,
+.about-subtitle,
+.about-small-title,
+.about-text,
+.about-list li {
+    color: var(--text-color); /* headings and main text */
+}
+
+.about-list li {
+    color: var(--subtext-color); /* subtext / list items */
+}
+.about-card {
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    margin: 1rem 0;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.about-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+.about-button {
+    background: var(--accent-gradient);
+    color: var(--button-primary-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    font-family: var(--font-family);
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.about-button:hover {
+    background: var(--accent-gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* =========================
+   Section Headings
+========================= */
+.enter h2,
+.need h2,
+.mission h2,
+.feature h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+.need h3,
+.sorting h3,
+.searching h3 {
+    margin: 30px auto;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--text-color);
+    max-width: 80%;
+    text-align: left;
+}
+
+/* =========================
+   Paragraphs / Content
+========================= */
+.welcome,
+.need p,
+.mission p {
+    max-width: 80%;
+    margin: 20px auto 40px auto;
+    text-align: center;
+    color: var(--subtext-color);
+}
+
+/* =========================
+   Lists
+========================= */
+.list {
+    margin: 20px auto 40px auto;
+    max-width: 80%;
+    text-align: left;
+    color: var(--text-color);
+}
+
+/* =========================
+   Animations / Performance
+========================= */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0 !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =========================
+   Mobile Responsiveness
+========================= */
+@media (max-width: 1024px) {
+    .need h3,
+    .sorting h3,
+    .searching h3,
+    .list {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .welcome,
+    .need p,
+    .mission p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .enter h2,
+    .need h2,
+    .mission h2,
+    .feature h2 {
+        font-size: 1.5rem; /* ~large */
+    }
+
+    .need h3,
+    .sorting h3,
+    .searching h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .welcome,
+    .need p,
+    .mission p,
+    .list {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .enter h2,
+    .need h2,
+    .mission h2,
+    .feature h2 {
+        font-size: 1.2rem;
+    }
+
+    .need h3,
+    .sorting h3,
+    .searching h3 {
+        font-size: 1rem;
+    }
+
+    .welcome,
+    .need p,
+    .mission p,
+    .list {
+        font-size: 0.9rem;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
