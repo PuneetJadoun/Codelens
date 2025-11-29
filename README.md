@@ -4,254 +4,6 @@ A modern, interactive web application for understanding Data Structures and Algo
 
 🔍 Overview
 
-AlgoVisualizer is built to make algorithm learning simple, visual, and engaging. Instead of reading long code samples or imagining how an algorithm behaves internally, this tool shows the entire process visually with real-time updates, animation, and performance stats.
-
-It is ideal for:
-
-Students learning DSA
-
-Developers brushing up fundamentals
-
-Anyone preparing for coding interviews
-
-Visual learners who prefer interactive explanations
-
-✨ Features
-🎨 Modern UI
-
-Clean & responsive design
-
-Smooth animations
-
-Dark-mode optimized interface
-
-📊 Data Input System
-
-Enter data manually
-
-Upload JSON / CSV / TXT files
-
-Built-in sample datasets
-
-Automatic input validation
-
-🧠 Algorithm Visualizations
-
-Each algorithm runs with:
-
-Step-by-step transitions
-
-Highlights for comparisons/swaps
-
-Adjustable execution speed
-
-Real-time stats (iterations, comparisons, swaps, etc.)
-
-📝 Code Viewer
-
-View algorithm implementation
-
-Language tabs (Python, C++, Java)
-
-Copy-ready, clean, readable code
-
-📸 Export Tools
-
-Capture snapshots (PNG/JPEG)
-
-Export complete runs as GIF / video
-
-Useful for teaching, documentation, and presentations
-
-🎓 Learning Tools
-
-Mini-explanations
-
-Time/space complexity details
-
-Short learning notes
-
-🔍 Supported Visualizations
-🔵 Sorting Algorithms
-
-Bubble Sort
-
-Insertion Sort
-
-Selection Sort
-
-Merge Sort
-
-Quick Sort
-
-Bucket Sort
-
-Radix Sort
-
-🔍 Searching Algorithms
-
-Linear Search
-
-Binary Search
-
-Jump Search
-
-Exponential Search
-
-🌿 Data Structures
-
-Stack
-
-Queue
-
-Linked List
-
-Binary Tree
-
-Binary Search Tree
-
-🕸️ Graph Algorithms
-
-BFS
-
-DFS
-
-Dijkstra
-
-🛠️ Tech Stack
-Frontend
-
-React 18
-
-Vite
-
-Framer Motion
-
-React Router
-
-Lucide Icons
-
-CSS3
-
-Utilities
-
-HTML2Canvas (screenshots)
-
-GIF.js (GIF export)
-
-RecordRTC (video recording)
-
-Deployment
-
-Vercel
-
-⚙️ Installation
-1️⃣ Clone the Project
-git clone https://github.com/YOUR_USERNAME/Codelens.git
-cd Codelens
-
-2️⃣ Install Dependencies
-npm install
-
-3️⃣ Run Development Server
-npm run dev
-
-
-Open in browser:
-http://localhost:5173
-
-📁 Project Structure (Simplified)
-src/
- ├── algorithms/     # Sorting, searching, graph algorithms
- ├── components/     # Reusable UI components
- ├── pages/          # Main pages
- ├── contexts/       # Theme and global contexts
- ├── services/       # Helper logic & utilities
- ├── styles/         # CSS styling
- ├── main.jsx        # Entry point
- └── App.jsx         # Root component
-
-🎯 Usage
-🔢 Sorting
-
-Enter array values
-
-Choose the sorting algorithm
-
-Adjust speed
-
-Click Start to visualize
-
-🔍 Searching
-
-Provide sorted array
-
-Select searching method
-
-Enter the target element
-
-🌐 Graph Algorithms
-
-Create nodes & edges
-
-Choose algorithm
-
-Watch traversal or shortest-path execution
-
-🛠️ Build for Production
-npm run build
-npm run preview
-
-🧩 Troubleshooting
-❌ Node version errors
-npm cache clean --force
-rm -rf node_modules
-npm install --legacy-peer-deps
-
-❌ Port issues
-npm run dev -- --port 3000
-
-📌 Future Improvements (Personal Roadmap)
-
-Add Ternary Search
-
-Add Heap Sort, Shell Sort
-
-Add weighted graph visualizations
-
-Add user accounts for saving progress
-
-Add dashboard with individualized metrics
-
-📜 License
-
-This project is created for personal use.
-You are free to modify or extend it as needed.
-
-⭐ Show Support
-
-If you like this project, consider giving it a star ⭐ on GitHub!
-
-If you want, I can also:
-✅ Add a logo section
-✅ Add GIF previews
-✅ Add badges (React, Vite, JavaScript, etc.)
-✅ Add a cleaner short version
-Just tell me what style you want!
-
-You said:
-remvoe deployment part and relate stuff i have not deloyed it
-ChatGPT said:
-
-Sure bhai — main deployment ka pura section hata deta hoon + jo bhi deployment-related lines the unhe clean kar diya hai.
-Yeh fully updated, clean, personal-use README ready hai.
-
-🚀 AlgoVisualizer
-
-A modern, interactive web application for understanding Data Structures and Algorithms through real-time visualizations. This project helps learners explore how sorting, searching, graph traversal, and other algorithms work step-by-step with clean animations and intuitive controls.
-
-🔍 Overview
-
 AlgoVisualizer is built to make algorithm learning simple, visual, and engaging. Instead of reading long code samples or imagining how an algorithm behaves internally, this tool shows the entire process visually with real-time updates and animations.
 
 It is ideal for:
@@ -468,3 +220,227 @@ Add timeline scrubbing for animations
 ⭐ Show Support
 
 If you found this project helpful, feel free to star ⭐ it!
+
+If you want:
+✅ A shorter minimal README
+OR
+✅ A more professional version with badges
+
+Just tell me, I’ll prepare it!
+
+You said:
+remove iamgea and recording part
+ChatGPT said:
+
+Done bhai — mainne image capture + GIF/video recording + screenshot functionalities ka pura mention hata diya hai.
+Ab README bilkul clean, personal-use, and simple ho gaya.
+
+🚀 AlgoVisualizer
+
+A modern, interactive web application for understanding Data Structures and Algorithms through real-time visualizations. This project helps learners explore how sorting, searching, graph traversal, and other algorithms work step-by-step using clean animations and intuitive controls.
+
+🔍 Overview
+
+AlgoVisualizer is designed to make algorithm learning simple, visual, and interactive. Instead of imagining how an algorithm works internally, this tool displays each step clearly with transitions and highlights.
+
+Ideal for:
+
+Students learning DSA
+
+Developers revising fundamentals
+
+Interview preparation
+
+Visual learners
+
+✨ Features
+🎨 Modern UI
+
+Clean, responsive layout
+
+Smooth transitions and animations
+
+Dark interface suitable for long sessions
+
+📊 Data Input System
+
+Manual data entry
+
+Upload JSON / CSV / TXT files
+
+Built-in sample datasets
+
+Smart input validation
+
+🧠 Algorithm Visualizations
+
+Step-by-step transitions
+
+Highlights on comparisons, swaps, movements
+
+Adjustable speed control
+
+Real-time statistics (iterations, comparisons, swaps, etc.)
+
+📝 Code Viewer
+
+Switch between Python / C++ / Java
+
+Clean, readable code
+
+Easy copy functionality
+
+🎓 Learning Tools
+
+Short algorithm descriptions
+
+Time and space complexity
+
+Clear working explanation with visuals
+
+🔍 Supported Visualizations
+🔵 Sorting Algorithms
+
+Bubble Sort
+
+Insertion Sort
+
+Selection Sort
+
+Merge Sort
+
+Quick Sort
+
+Bucket Sort
+
+Radix Sort
+
+🔍 Searching Algorithms
+
+Linear Search
+
+Binary Search
+
+Jump Search
+
+Exponential Search
+
+🌿 Data Structures
+
+Stack
+
+Queue
+
+Linked List
+
+Binary Tree
+
+Binary Search Tree
+
+🕸️ Graph Algorithms
+
+BFS
+
+DFS
+
+Dijkstra
+
+🛠️ Tech Stack
+Frontend
+
+React 18
+
+Vite
+
+Framer Motion
+
+React Router
+
+Lucide Icons
+
+CSS3
+
+Utilities
+
+Basic helper utilities for sorting/searching visualization
+
+Custom logic for animations & UI states
+
+⚙️ Installation
+1️⃣ Clone the Project
+git clone https://github.com/YOUR_USERNAME/Codelens.git
+cd Codelens
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Start Development Server
+npm run dev
+
+
+Go to:
+http://localhost:5173
+
+📁 Project Structure (Simplified)
+src/
+ ├── algorithms/     # Sorting, searching, graph algorithms
+ ├── components/     # Reusable UI components
+ ├── pages/          # All main pages
+ ├── contexts/       # Theme and global contexts
+ ├── services/       # Helper logic
+ ├── styles/         # CSS files
+ ├── utils/          # Utility functions
+ ├── main.jsx        # Application entry point
+ └── App.jsx         # Root component
+
+🎯 Usage
+🔢 Sorting
+
+Enter array values
+
+Choose a sorting algorithm
+
+Set animation speed
+
+Start the visualization
+
+🔍 Searching
+
+Provide sorted data
+
+Choose searching method
+
+Enter target value
+
+Watch step-by-step search
+
+🌐 Graph Algorithms
+
+Add nodes & edges
+
+Select algorithm (BFS, DFS, Dijkstra)
+
+Observe traversal or shortest-path process
+
+🧩 Troubleshooting
+❌ Node / Dependency Issues
+npm cache clean --force
+rm -rf node_modules
+npm install --legacy-peer-deps
+
+❌ Port Already Running
+npm run dev -- --port 3000
+
+📌 Future Enhancements
+
+Add Heap Sort, Shell Sort
+
+Add AVL Tree and Heap visualization
+
+Add weighted graph creation UI
+
+Add timeline scrubbing for animations
+
+⭐ Show Support
+
+If you like this project, consider giving it a star ⭐ on GitHub.
