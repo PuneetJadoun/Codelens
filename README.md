@@ -157,17 +157,17 @@ Open in browser:
 http://localhost:5173
  (or whatever port Vite selects)
 
-📁 Project Structure (Simplified)
 src/
- ├── algorithms/     # Sorting, searching, graph algorithms
- ├── components/     # Reusable UI components
- ├── pages/          # Page-level components
- ├── contexts/       # Theme and global states
- ├── services/       # Helper functions
- ├── styles/         # CSS styling
- ├── utils/          # Utility helpers
- ├── main.jsx        # Entry point
- └── App.jsx         # Root component
+ ├── algorithms/        # Sorting, searching, and graph algorithm logic
+ ├── components/        # Reusable UI components
+ ├── pages/             # Page-level components (Home, Sorting, Searching, etc.)
+ ├── contexts/          # Global states (Theme, App state)
+ ├── services/          # Helper and service-level functions
+ ├── styles/            # Global and component-specific CSS
+ ├── utils/             # Utility/helper functions
+ ├── main.jsx           # Application entry point
+ └── App.jsx            # Root component containing app routes
+
 
 🎯 Usage
 🔢 Sorting
